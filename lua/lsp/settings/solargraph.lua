@@ -1,5 +1,6 @@
-local nvim_lsp = require('lspconfig')
-
+require("lspconfig").vimls.setup{
+  on_attach = require("aerial").on_attach,
+}
 return {
 	cmd = {
     "solargraph",

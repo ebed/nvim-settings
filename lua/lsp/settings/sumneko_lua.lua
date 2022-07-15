@@ -1,3 +1,6 @@
+require("lspconfig").vimls.setup{
+  on_attach = require("aerial").on_attach,
+}
 return {
 	settings = {
 

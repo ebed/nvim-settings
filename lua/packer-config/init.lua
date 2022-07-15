@@ -1,6 +1,16 @@
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use "lunarvim/darkplus.nvim"
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+  use { 'stevearc/aerial.nvim' }
+  use { 'mhartington/oceanic-next' }
+  use { 'justinmk/vim-sneak' }
+  -- Database
+  use { 'tpope/vim-dadbod' }
+  use { 'kristijanhusak/vim-dadbod-ui' }
 -- use {
 --   "folke/trouble.nvim",
 --   requires = "kyazdani42/nvim-web-devicons",
@@ -76,6 +86,7 @@ return require('packer').startup(function()
     "neovim/nvim-lspconfig",
   }
 
+  use { 'joshdick/onedark.vim' }
   use 'scrooloose/nerdtree'
   use 'xuyuanp/nerdtree-git-plugin'
   use 'PhilRunninger/nerdtree-visual-selection'
@@ -83,8 +94,8 @@ return require('packer').startup(function()
   use 'jreybert/vimagit'
 
 --    use { 'fannheyward/telescope-coc.nvim' }
-    use 'vim-airline/vim-airline'
-    use 'vim-airline/vim-airline-themes'
+    -- use 'vim-airline/vim-airline'
+    -- use 'vim-airline/vim-airline-themes'
     use 'Yggdroot/indentLine'
 
   --  use { 'neoclide/coc.nvim', branch='release' }
@@ -195,9 +206,9 @@ return require('packer').startup(function()
   config = function()
     require("rest-nvim").setup({
       -- Open request results in a horizontal split
-      result_split_horizontal = false,
+      result_split_horizontal = true,
       -- Keep the http file buffer above|left when split horizontal|vertical
-      result_split_in_place = false,
+      result_split_in_place = true,
       -- Skip SSL verification, useful for unknown certificates
       skip_ssl_verification = false,
       -- Highlight request on run

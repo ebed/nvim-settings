@@ -18,6 +18,11 @@ local function get_notif_data(client_id, token)
  return client_notifs[client_id][token]
 end
 
+vim.notify.setup({
+background_colour = "#000000"
+})
+
+vim.termguicolors = true
 
 local function coc_notify(msg, level)
   local notify_opts = { title = "LSP Message", timeout = 500 }

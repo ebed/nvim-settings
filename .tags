@@ -1,0 +1,52 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+("No	vimsettings/notify-config.vim	/^        notify("No output of command, exit code: " .. code, "warn")$/;"	m
+(output,	vimsettings/notify-config.vim	/^    notify(output, "info")$/;"	m
+=	vimsettings/notify-config.vim	/^    notification = vim.notify(msg, level, notify_opts)$/;"	m
+InitCoc	vimsettings/notify-config.vim	/^function! s:InitCoc() abort$/;"	f
+M.on_attach 	lua/lsp/handlers.lua	/^M.on_attach = function(client, bufnr)$/;"	f
+M.setup 	lua/lsp/handlers.lua	/^M.setup = function()$/;"	f
+["<S-Tab>"] 	lua/settings/cmp.lua	/^    ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
+["<Tab>"] 	lua/settings/cmp.lua	/^    ["<Tab>"] = cmp.mapping(function(fallback)$/;"	f
+_data.notification	vimsettings/notify-config.vim	/^   notif_data.notification = vim.notify(format_message(val.message, val.percentage), "info", {$/;"	m
+_data.notification	vimsettings/notify-config.vim	/^   notif_data.notification = vim.notify(message, "info", {$/;"	m
+_data.notification	vimsettings/notify-config.vim	/^   notif_data.notification =$/;"	m
+_data.spinner	vimsettings/notify-config.vim	/^   notif_data.spinner = 1$/;"	m
+_data.spinner	vimsettings/notify-config.vim	/^   notif_data.spinner = nil$/;"	m
+coc#ui#echo_lines	vimsettings/notify-config.vim	/^  function! coc#ui#echo_lines(lines)$/;"	f
+coc_diag_notify	lua/notify-config/init.lua	/^local function coc_diag_notify(msg, level)$/;"	f
+coc_notify	lua/notify-config/init.lua	/^local function coc_notify(msg, level)$/;"	f
+coc_status_notify	lua/notify-config/init.lua	/^local function coc_status_notify(msg, level)$/;"	f
+config 	lua/packer-config/init.lua	/^  config = function()$/;"	f
+description 	lua/lsp/settings/jsonls.lua	/^    description = "The AWS Serverless Application Model (AWS SAM, previously known as Project Flourish) extends AWS CloudFormation to provide a simplified way of defining the Amazon API Gateway APIs, AWS Lambda functions, and Amazon DynamoDB tables needed by your serverless application.",$/;"	f
+expand 	lua/settings/cmp.lua	/^    expand = function(args)$/;"	f
+format 	lua/settings/cmp.lua	/^    format = function(entry, vim_item)$/;"	f
+format_message	lua/notify-config/init.lua	/^local function format_message(message, percentage)$/;"	f
+format_title	lua/notify-config/init.lua	/^local function format_title(title, client_name)$/;"	f
+get_notif_data	lua/notify-config/init.lua	/^local function get_notif_data(client_id, token)$/;"	f
+if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~	plugin/packer_compiled.lua	/^if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then$/;"	f
+local check_backspace 	lua/settings/cmp.lua	/^local check_backspace = function()$/;"	f
+local no_errors, error_msg 	plugin/packer_compiled.lua	/^local no_errors, error_msg = pcall(function()$/;"	f
+lsp_highlight_document	lua/lsp/handlers.lua	/^local function lsp_highlight_document(client)$/;"	f
+lsp_keymaps	lua/lsp/handlers.lua	/^local function lsp_keymaps(bufnr)$/;"	f
+map	lua/mappings/init.lua	/^function map(mode, lhs, rhs, opts)$/;"	f
+on_attach 	lua/settings/aerial.lua	/^  on_attach = function(bufnr)$/;"	f
+reset_coc_diag_record	lua/notify-config/init.lua	/^local function reset_coc_diag_record(window)$/;"	f
+reset_coc_status_record	lua/notify-config/init.lua	/^local function reset_coc_status_record(window)$/;"	f
+s:DiagnosticNotify	lua/notify-config/init.lua	/^function! s:DiagnosticNotify() abort$/;"	f
+s:InitCoc	lua/notify-config/init.lua	/^function! s:InitCoc() abort$/;"	f
+s:StatusNotify	lua/notify-config/init.lua	/^function! s:StatusNotify() abort$/;"	f
+s:echo_lines	lua/notify-config/init.lua	/^  function! s:echo_lines(lines)$/;"	f
+s:echo_messages	lua/notify-config/init.lua	/^function! s:echo_messages(hl, msgs)$/;"	f
+s:show_documentation	lua/ale-config/init.lua	/^function! s:show_documentation()$/;"	f
+save_profiles	plugin/packer_compiled.lua	/^local function save_profiles(threshold)$/;"	f
+time 	plugin/packer_compiled.lua	/^    time = function(chunk, start) end$/;"	f
+time 	plugin/packer_compiled.lua	/^    time = function(chunk, start)$/;"	f
+try_loadstring	plugin/packer_compiled.lua	/^local function try_loadstring(s, component, name)$/;"	f
+update_spinner	lua/notify-config/init.lua	/^local function update_spinner(client_id, token)$/;"	f
+vim.lsp.handlers["$/progress"] 	lua/notify-config/init.lua	/^vim.lsp.handlers["$\/progress"] = function(_, result, ctx)$/;"	f
+vim.lsp.handlers["window/showMessage"] 	lua/notify-config/init.lua	/^vim.lsp.handlers["window\/showMessage"] = function(err, method, params, client_id)$/;"	f

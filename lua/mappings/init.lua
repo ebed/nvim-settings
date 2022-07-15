@@ -6,6 +6,11 @@ function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+map("n", "<Leader>du", ":DBUIToggle")
+map("n", "<Leader>df", ":DBUIFindBuffer")
+map("n", "<Leader>dr", ":DBUIRenameBuffer")
+map("n", "<Leader>dl", ":DBUILastQueryInfo")
+
 
 map("n", "<Leader>c", ":Glow<CR>")
 
@@ -18,8 +23,8 @@ map("n","<Leader>SS", ":vsplit<CR>")
 map("n", "<Leader>q", ":q<CR>")
 map("n", "<Leader>qq", ":q!<CR>")
 
-map("n", "<Leader>s", ":w<CR>")
-map("n", "<Leader>ss", ":w!<CR>")
+map("n", "<Leader>w", ":w<CR>")
+map("n", "<Leader>ww", ":w!<CR>")
 
 map("n", "<Leader>x", ":x<CR>")
 map("n", "<Leader>X", ":x!<CR>")
@@ -38,6 +43,18 @@ map("n", "<Leader>bb",":bp<CR>")
 map("n", "<Leader>ne","gt")
 map("n", "<Leader>nm","gT")
 map("n", "<Leader>n",":tabnew<CR>")
+
+-- Fugitive resolve conflicts
+map("n", "<Leader>gd", ":Gvdiffsplit<CR>")
+map("n", "gh", ":diffget //2<CR>")
+map("n", "gl", ":diffget //3<CR>")
+map("n", "ge", "<C>wo")
+
+-- REST
+map("n", "<Leader>r", "<Plug>RestNvim")
+map("n", "<Leader>rl", "<Plug>RestNvimLast")
+map("n", "<Leader>rp", "<Plug>RestNvimPreview")
+
 
 -- Vifm
 map("n","<Leader>v",":Vifm<CR>")
