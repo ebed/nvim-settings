@@ -2,9 +2,10 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use "lunarvim/darkplus.nvim"
   use {
-    'nvim-lualine/lualine.nvim',
+    'hoob3rt/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  use { 'ThePrimeagen/git-worktree.nvim' }
   use { 'stevearc/aerial.nvim' }
   use { 'mhartington/oceanic-next' }
   use { 'justinmk/vim-sneak' }
@@ -129,6 +130,7 @@ return require('packer').startup(function()
     use 'elixir-editors/vim-elixir'
     use {'ellisonleao/glow.nvim', branch='main'}
     use 'nvim-telescope/telescope.nvim'
+    use { 'nvim-telescope/telescope-fzy-native.nvim' }
     use 'famiu/bufdelete.nvim'
     use { 'nvim-treesitter/nvim-treesitter' }
     use 'norcalli/nvim-colorizer.lua'

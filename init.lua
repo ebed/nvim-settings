@@ -18,4 +18,5 @@ require('settings.options')
 require('settings.lualine')
 require('settings.aerial')
 require('lsp')
+require("telescope").load_extension("git_worktree")
 
